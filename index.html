@@ -32,112 +32,114 @@
     <!-- favicons
     ================================================== -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2013/07/12/12/33/alphabet-145894_960_720.png" type="image/x-icon">
 
     <style>
         html {
             font-family: sans-serif;
             box-sizing: border-box;
-          }
-          
-          *, *:before, *:after {
+        }
+
+        *,
+        *:before,
+        *:after {
             box-sizing: inherit;
-          }
-          
-          .text-center {
+        }
+
+        .text-center {
             text-align: center;
-          }
-          
-          .color-white {
+        }
+
+        .color-white {
             color: #fff;
-          }
-          
-          .box-container {
+        }
+
+        .box-container {
             align-items: center;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             padding: 35px 15px;
             width: 100%;
-          }
-          
-          @media screen and (min-width:1380px) {
+        }
+
+        @media screen and (min-width:1380px) {
             .box-container {
-              flex-direction: row
+                flex-direction: row
             }
-          }
-          
-          .box-item {
+        }
+
+        .box-item {
             position: relative;
             -webkit-backface-visibility: hidden;
             width: 415px;
             margin-bottom: 35px;
             max-width: 100%;
-          }
-          
-          .flip-box {
+        }
+
+        .flip-box {
             -ms-transform-style: preserve-3d;
             transform-style: preserve-3d;
             -webkit-transform-style: preserve-3d;
             perspective: 1000px;
             -webkit-perspective: 1000px;
-          }
-          
-          .flip-box-front,
-          .flip-box-back {
+        }
+
+        .flip-box-front,
+        .flip-box-back {
             background-size: cover;
             background-position: center;
             border-radius: 8px;
             min-height: 475px;
-            -ms-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
-            transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
-            -webkit-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+            -ms-transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+            transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+            -webkit-transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-          }
-          
-          .flip-box-front {
+        }
+
+        .flip-box-front {
             -ms-transform: rotateY(0deg);
             -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
             -webkit-transform-style: preserve-3d;
             -ms-transform-style: preserve-3d;
             transform-style: preserve-3d;
-          }
-          
-          .flip-box:hover .flip-box-front {
+        }
+
+        .flip-box:hover .flip-box-front {
             -ms-transform: rotateY(-180deg);
             -webkit-transform: rotateY(-180deg);
             transform: rotateY(-180deg);
             -webkit-transform-style: preserve-3d;
             -ms-transform-style: preserve-3d;
             transform-style: preserve-3d;
-          }
-          
-          .flip-box-back {
+        }
+
+        .flip-box-back {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
-            
+
             -ms-transform: rotateY(180deg);
             -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
             -webkit-transform-style: preserve-3d;
             -ms-transform-style: preserve-3d;
             transform-style: preserve-3d;
-          }
-          
-          .flip-box:hover .flip-box-back {
+        }
+
+        .flip-box:hover .flip-box-back {
             -ms-transform: rotateY(0deg);
             -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
             -webkit-transform-style: preserve-3d;
             -ms-transform-style: preserve-3d;
             transform-style: preserve-3d;
-          }
-          
-          .flip-box .inner {
+        }
+
+        .flip-box .inner {
             position: absolute;
             left: 0;
             width: 100%;
@@ -146,27 +148,27 @@
             -webkit-perspective: inherit;
             perspective: inherit;
             z-index: 2;
-            
+
             transform: translateY(-50%) translateZ(60px) scale(.94);
             -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
             -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
             top: 50%;
-          }
-          
-          .flip-box-header {
+        }
+
+        .flip-box-header {
             font-size: 34px;
-          }
-          
-          .flip-box p {
+        }
+
+        .flip-box p {
             font-size: 20px;
             line-height: 1.5em;
-          }
-          
-          .flip-box-img {
+        }
+
+        .flip-box-img {
             margin-top: 25px;
-          }
-          
-          .flip-box-button {
+        }
+
+        .flip-box-button {
             background-color: transparent;
             border: 2px solid #fff;
             border-radius: 2px;
@@ -177,7 +179,7 @@
             margin-top: 25px;
             padding: 15px 20px;
             text-transform: uppercase;
-          }
+        }
     </style>
 </head>
 
@@ -205,11 +207,11 @@
                     <li><a class="smoothscroll" href="#about" title="about">About</a></li>
                     <li><a class="smoothscroll" href="#services" title="services">Services</a></li>
                     <li><a class="smoothscroll" href="#works" title="works">Works</a></li>
-                    <li><a class="smoothscroll" href="#clients" title="clients">Clients</a></li>
+                    <!-- <li><a class="smoothscroll" href="#clients" title="clients">Clients</a></li> -->
                     <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>
                 </ul>
 
-                <p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto
+                <!-- <p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto
                     sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p>
 
                 <ul class="header-nav__social">
@@ -228,7 +230,7 @@
                     <li>
                         <a href="#"><i class="fa fa-dribbble"></i></a>
                     </li>
-                </ul>
+                </ul> -->
 
             </div> <!-- end header-nav__content -->
 
@@ -244,8 +246,8 @@
 
     <!-- home
     ================================================== -->
-    <section id="home" data-image-src="images/bg.jpg" class="s-home target-section" data-parallax="scroll" data-natural-width=3000
-        data-natural-height=2000 data-position-y=center>
+    <section id="home" data-image-src="images/bg.jpg" class="s-home target-section" data-parallax="scroll"
+        data-natural-width=3000 data-natural-height=2000 data-position-y=center>
         <div class="overlay"></div>
         <div class="shadow-overlay"></div>
 
@@ -374,7 +376,8 @@
                 </div>
                 <div class="service-text">
                     <h3 class="h2">Promotional Websites</h3>
-                    <p>Website promotion is the continuing process used by webmasters to improve content and increase exposure of a website to bring more visitors.
+                    <p>Website promotion is the continuing process used by webmasters to improve content and increase
+                        exposure of a website to bring more visitors.
                     </p>
                 </div>
             </div>
@@ -385,7 +388,8 @@
                 </div>
                 <div class="service-text">
                     <h3 class="h2">Android Application</h3>
-                    <p> The Android platform is built for mobile devices, a typical Android app is designed for a smartphone or a tablet PC running on the Android OS.
+                    <p> The Android platform is built for mobile devices, a typical Android app is designed for a
+                        smartphone or a tablet PC running on the Android OS.
                     </p>
                 </div>
             </div>
@@ -396,7 +400,8 @@
                 </div>
                 <div class="service-text">
                     <h3 class="h2">E-Commererce Website</h3>
-                    <p>Now, with a single website, anything and everything that a transaction needs, can be executed online.
+                    <p>Now, with a single website, anything and everything that a transaction needs, can be executed
+                        online.
                     </p>
                 </div>
             </div>
@@ -407,7 +412,7 @@
                 </div>
                 <div class="service-text">
                     <h3 class="h2">Static/Dynamic Websites</h3>
-                    <p>Static as well as Data Driven Websites are developed as per requirements. 
+                    <p>Static as well as Data Driven Websites are developed as per requirements.
                     </p>
                 </div>
             </div>
@@ -418,7 +423,8 @@
                 </div>
                 <div class="service-text">
                     <h3 class="h2">Desktop Applications</h3>
-                    <p>The applications run by taking advantage of the computer's resources, including processing power, computer memory and hard disk drive space.
+                    <p>The applications run by taking advantage of the computer's resources, including processing power,
+                        computer memory and hard disk drive space.
                     </p>
                 </div>
             </div>
@@ -453,140 +459,156 @@
 
                 <div class="col-block service-item" data-aos="fade-up">
                     <div class="box-item">
-                    <div class="flip-box">
-                      <div class="flip-box-front text-center" style="background-image: url('images/grabit.jpeg');">
-                        <div class="inner color-white">
-                          <h3 class="flip-box-header"></h3>
-                          <p style="color: black;">.</p>
-                          <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                        <div class="flip-box">
+                            <div class="flip-box-front text-center"
+                                style="background-image: url('images/grabit.jpeg');">
+                                <div class="inner color-white">
+                                    <h3 class="flip-box-header"></h3>
+                                    <p style="color: black;">.</p>
+                                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt=""
+                                        class="flip-box-img">
+                                </div>
+                            </div>
+                            <div class="flip-box-back text-center" style="background-image: url('');">
+                                <div class="inner color-white">
+                                    <h3 class="flip-box-header" style="color: white;">GrabIT</h3>
+                                    <p>Product developed for helping college students by selling and buying their items
+                                        in house..</p>
+                                    <!-- <button class="flip-box-button">Learn More</button> -->
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="flip-box-back text-center" style="background-image: url('');">
-                        <div class="inner color-white">
-                          <h3 class="flip-box-header" style="color: white;">GrabIT</h3>
-                          <p>Product developed for helping college students by selling and buying their items in house..</p>
-                          <!-- <button class="flip-box-button">Learn More</button> -->
-                        </div>
-                      </div>
-                    </div>
                     </div>
                 </div>
                 <div class="col-block service-item" data-aos="fade-up">
 
                     <div class="box-item">
-                    <div class="flip-box">
-                      <div class="flip-box-front text-center" style="background-image: url('images/joyletter.jpeg');">
-                        <div class="inner color-white">
-                          <h3 class="flip-box-header"></h3>
-                          <p></p>
-                          <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
-                        </div>
-                      </div>
-                      <div class="flip-box-back text-center" style="background-image: url('');">
-                        <div class="inner color-white">
-                          <h3 class="flip-box-header" style="color: white;">Joy Letter</h3>
-                          <p>Joy letter brings you a helping tool changing the attitude by Taking Nam based on the philosophy folowed by P. P. Datta Kaka and experiences provided by him to many people on the teachings of Shri Brahmchaitanya Gondavlekar Maharaj.</p>
-                          <!-- <button class="flip-box-button">Learn More</button> -->
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                    </div>
-
-                    <div class="col-block service-item" data-aos="fade-up">
-
-                        <div class="box-item">
                         <div class="flip-box">
-                          <div class="flip-box-front text-center" style="background-image: url('images/jgand.jpeg');">
-                            <div class="inner color-white">
-                              <h3 class="flip-box-header"></h3>
-                              <p></p>
-                              <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
-                            </div>
-                          </div>
-                          <div class="flip-box-back text-center" style="background-image: url('');">
-                            <div class="inner color-white">
-                              <h3 class="flip-box-header" style="color: white;">Jain Gautam and Company
-                            </h3>
-                              <p>Website developed for CA firm for their business purpose.
-                            </p>
-                              <!-- <button class="flip-box-button">Learn More</button> -->
-                            </div>
-                          </div>
-                        </div>
-                        </div>
-                        </div>
-
-                        <div class="col-block service-item" data-aos="fade-up">
-
-                            <div class="box-item">
-                            <div class="flip-box">
-                              <div class="flip-box-front text-center" style="background-image: url('images/pongping.jpeg');">
+                            <div class="flip-box-front text-center"
+                                style="background-image: url('images/joyletter.jpeg');">
                                 <div class="inner color-white">
-                                  <h3 class="flip-box-header"></h3>
-                                  <p></p>
-                                  <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                                    <h3 class="flip-box-header"></h3>
+                                    <p></p>
+                                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt=""
+                                        class="flip-box-img">
                                 </div>
-                              </div>
-                              <div class="flip-box-back text-center" style="background-image: url('images/pongpingb.jpeg');">
+                            </div>
+                            <div class="flip-box-back text-center" style="background-image: url('');">
                                 <div class="inner color-white">
-                                  <h3 class="flip-box-header" style="color: white;">Pong Ping</h3>
-                                  <p>A mature PingPong Game having multiple Crazy levels.
-                                </p>
-                                  <!-- <button class="flip-box-button">Learn More</button> -->
+                                    <h3 class="flip-box-header" style="color: white;">Joy Letter</h3>
+                                    <p>Joy letter brings you a helping tool changing the attitude by Taking Nam based on
+                                        the philosophy folowed by P. P. Datta Kaka and experiences provided by him to
+                                        many people on the teachings of Shri Brahmchaitanya Gondavlekar Maharaj.</p>
+                                    <!-- <button class="flip-box-button">Learn More</button> -->
                                 </div>
-                              </div>
                             </div>
-                            </div>
-                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="col-block service-item" data-aos="fade-up">
+                <div class="col-block service-item" data-aos="fade-up">
 
-                        <div class="box-item">
+                    <div class="box-item">
                         <div class="flip-box">
-                          <div class="flip-box-front text-center" style="background-image: url('images/kafila.jpeg');">
-                            <div class="inner color-white">
-                              <h3 class="flip-box-header"></h3>
-                              <p></p>
-                              <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
-                            </div>
-                          </div>
-                          <div class="flip-box-back text-center" style="background-image: url('');">
-                            <div class="inner color-white">
-                              <h3 class="flip-box-header" style="color: white;">Kafila</h3>
-                              <p>Traveling website which was 
-                                Developed for young entrepreneur to encourage fitness and display nature.</p>
-                              <!-- <button class="flip-box-button">Learn More</button> -->
-                            </div>
-                          </div>
-                        </div>
-                        </div>
-                        </div>
-
-                        <div class="col-block service-item" data-aos="fade-up">
-
-                            <div class="box-item">
-                            <div class="flip-box">
-                              <div class="flip-box-front text-center" style="background-image: url('images/healthtracker.jpeg');">
+                            <div class="flip-box-front text-center" style="background-image: url('images/jgand.jpeg');">
                                 <div class="inner color-white">
-                                  <h3 class="flip-box-header"></h3>
-                                  <p></p>
-                                  <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                                    <h3 class="flip-box-header"></h3>
+                                    <p></p>
+                                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt=""
+                                        class="flip-box-img">
                                 </div>
-                              </div>
-                              <div class="flip-box-back text-center" style="background-image: url('');">
+                            </div>
+                            <div class="flip-box-back text-center" style="background-image: url('');">
                                 <div class="inner color-white">
-                                  <h3 class="flip-box-header" style="color: white;">Heath Tracker</h3>
-                                  <p>Web app developed during 36 hrs competition held at MANIT, Bhopal which tracks fitness level and synchronize MI Fitbit.
-                                </p>
-                                  <!-- <button class="flip-box-button">Learn More</button> -->
+                                    <h3 class="flip-box-header" style="color: white;">Jain Gautam and Company
+                                    </h3>
+                                    <p>Website developed for CA firm for their business purpose.
+                                    </p>
+                                    <!-- <button class="flip-box-button">Learn More</button> -->
                                 </div>
-                              </div>
                             </div>
-                            </div>
-                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<!-- 
+                <div class="col-block service-item" data-aos="fade-up">
+
+                    <div class="box-item">
+                        <div class="flip-box">
+                            <div class="flip-box-front text-center"
+                                style="background-image: url('images/pongping.jpeg');">
+                                <div class="inner color-white">
+                                    <h3 class="flip-box-header"></h3>
+                                    <p></p>
+                                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt=""
+                                        class="flip-box-img">
+                                </div>
+                            </div>
+                            <div class="flip-box-back text-center"
+                                style="background-image: url('images/pongpingb.jpeg');">
+                                <div class="inner color-white">
+                                    <h3 class="flip-box-header" style="color: white;">Pong Ping</h3>
+                                    <p>A mature PingPong Game having multiple Crazy levels.
+                                    </p>
+                                    <!-- <button class="flip-box-button">Learn More</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-block service-item" data-aos="fade-up">
+
+                    <div class="box-item">
+                        <div class="flip-box">
+                            <div class="flip-box-front text-center"
+                                style="background-image: url('images/kafila.jpeg');">
+                                <div class="inner color-white">
+                                    <h3 class="flip-box-header"></h3>
+                                    <p></p>
+                                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt=""
+                                        class="flip-box-img">
+                                </div>
+                            </div>
+                            <div class="flip-box-back text-center" style="background-image: url('');">
+                                <div class="inner color-white">
+                                    <h3 class="flip-box-header" style="color: white;">Kafila</h3>
+                                    <p>Traveling website which was
+                                        Developed for young entrepreneur to encourage fitness and display nature.</p>
+                                    <!-- <button class="flip-box-button">Learn More</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-block service-item" data-aos="fade-up">
+
+                    <div class="box-item">
+                        <div class="flip-box">
+                            <div class="flip-box-front text-center"
+                                style="background-image: url('images/healthtracker.jpeg');">
+                                <div class="inner color-white">
+                                    <h3 class="flip-box-header"></h3>
+                                    <p></p>
+                                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt=""
+                                        class="flip-box-img">
+                                </div>
+                            </div>
+                            <div class="flip-box-back text-center" style="background-image: url('');">
+                                <div class="inner color-white">
+                                    <h3 class="flip-box-header" style="color: white;">Heath Tracker</h3>
+                                    <p>Web app developed during 36 hrs competition held at MANIT, Bhopal which tracks
+                                        fitness level and synchronize MI Fitbit.
+                                    </p>
+                                    <!-- <button class="flip-box-button">Learn More</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 
                 <div class="col-block service-item" data-aos="fade-up">
                     <div class="service-icon" style="padding-top: 30px;">
                         <img src="/images/grabit.png" width="60px" alt="">
@@ -692,16 +714,18 @@
                 </div> -->
 
             </div>
-        </div> <!-- end intro-wrap -->
+        </div> 
+        <!-- end intro-wrap -->
 
         <!-- end works-content -->
 
-    </section> <!-- end s-works -->
+    </section>
+     <!-- end s-works -->
 
 
     <!-- clients
     ================================================== -->
-    <section id="clients" class="s-clients">
+    <!-- <section id="clients" class="s-clients">
 
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
@@ -709,7 +733,7 @@
                 <h1 class="display-2">CBKM has been honored to
                     partner up with these clients</h1>
             </div>
-        </div> <!-- end section-header -->
+        </div> 
 
         <div class="row clients-outer" data-aos="fade-up">
             <div class="col-full">
@@ -724,9 +748,9 @@
                     <a href="#0" title="" class="clients__slide"><img src="images/clients/joomla.png" /></a>
                     <a href="#0" title="" class="clients__slide"><img src="images/clients/magento.png" /></a>
 
-                </div> <!-- end clients -->
-            </div> <!-- end col-full -->
-        </div> <!-- end clients-outer -->
+                </div>
+            </div> 
+        </div> 
 
         <div class="row clients-testimonials" data-aos="fade-up">
             <div class="col-full">
@@ -777,12 +801,12 @@
 
                     </div>
 
-                </div><!-- end testimonials -->
+                </div>
 
-            </div> <!-- end col-full -->
-        </div> <!-- end client-testimonials -->
+            </div>
+        </div>
 
-    </section> <!-- end s-clients -->
+    </section>  -->
 
 
     <!-- contact
@@ -807,32 +831,30 @@
 
                     <h3 class="h12 hide-on-fullwidth">Contact Info</h3>
 
-                    <div class="left">
+                    <div class="">
                         <h5>Where to Find Us</h5>
                         <p>
-                            1600 Amphitheatre Parkway<br>
-                            Mountain View, CA<br>
-                            94043 US
+                       
+                            Virtually Available <br>
+                            Everywhere
                         </p>
                     </div>
 
                     <div class="cinfo">
                         <h5>Email Us At</h5>
                         <p>
-                            contact@CBKMsite.com<br>
-                            info@CBKMsite.com
+                           thecbkm@gmail.com
                         </p>
                     </div>
 
                     <div class="cinfo">
                         <h5>Call Us At</h5>
                         <p>
-                            Phone: (+63) 555 1212<br>
-                            Mobile: (+63) 555 0100<br>
-                            Fax: (+63) 555 0101
+                            Phone: +91 9340573858<br>
+                            Mobile: +91 9131471942<br>
                         </p>
                     </div>
-
+<!-- 
                     <ul class="contact-social">
                         <li>
                             <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -849,7 +871,8 @@
                         <li>
                             <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
                         </li>
-                    </ul> <!-- end contact-social -->
+                    </ul> -->
+                     <!-- end contact-social -->
 
                 </div> <!-- end contact-info -->
             </div> <!-- end contact-secondary -->
@@ -863,7 +886,7 @@
     ================================================== -->
     <footer>
 
-        <div class="row footer-main">
+        <!-- <div class="row footer-main">
 
             <div class="col-six tab-full left footer-desc">
 
@@ -890,16 +913,16 @@
                     </form>
                 </div>
 
-            </div>
+            </div> -->
 
-        </div> <!-- end footer-main -->
+        <!-- </div> end footer-main -->
 
         <div class="row footer-bottom">
 
             <div class="col-twelve">
                 <div class="copyright">
-                    <span>© Copyright CBKM 2017</span>
-                    <span>Site Template by <a href="https://www.colorlib.com/">Colorlib</a></span>
+                    <span>© Copyright CBKM 2020</span>
+                    <span>Site Developed by <a href="#">CBKM</a></span>
                 </div>
 
                 <div class="go-top">
@@ -915,7 +938,7 @@
 
     <!-- photoswipe background
     ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+    <!-- <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
 
         <div class="pswp__bg"></div>
         <div class="pswp__scroll-wrap">
@@ -950,9 +973,9 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
 
-    </div> <!-- end photoSwipe background -->
+    <!-- </div> end photoSwipe background -->
 
 
     <!-- preloader
@@ -988,11 +1011,11 @@
         })();
     </script>
     <script>
-        setInterval(()=>{
-            if(document.getElementsByTagName("iframe")[0].contentDocument.getElementsByClassName("emojione")[0])
-            document.getElementsByTagName("iframe")[0].contentDocument.getElementsByClassName("emojione")[0].parentNode.parentNode.innerHTML=""
-            }
-            )
+        setInterval(() => {
+            if (document.getElementsByTagName("iframe")[0].contentDocument.getElementsByClassName("emojione")[0])
+                document.getElementsByTagName("iframe")[0].contentDocument.getElementsByClassName("emojione")[0].parentNode.parentNode.innerHTML = ""
+        }
+        )
     </script>
     <!--End of Tawk.to Script-->
 </body>
