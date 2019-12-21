@@ -1,0 +1,22 @@
+{
+  "name": "cbkm_website",
+  "version": "1.0.0",
+  "description": "Website",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CBKM-Company/website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CBKM-Company/website/issues"
+  },
+  "homepage": "https://github.com/CBKM-Company/website#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
