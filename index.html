@@ -1001,7 +1001,11 @@
     <script>
         setInterval(() => {
             if (document.getElementsByTagName("iframe")[0].contentDocument.getElementsByClassName("emojione")[0])
-                document.getElementsByTagName("iframe")[0].contentDocument.getElementsByClassName("emojione")[0].parentNode.parentNode.innerHTML = ""
+            document.getElementsByTagName("iframe")[0].contentDocument.getElementsByClassName("emojione")[0].parentNode.parentNode.innerHTML = ""
+
+            if(document.getElementsByTagName("iframe")[1].contentDocument.getElementsByClassName("emojione")[0])
+            document.getElementsByTagName("iframe")[1].contentDocument.getElementsByClassName("emojione")[0].parentNode.parentNode.innerHTML = ""
+
         }
         )
     </script>
